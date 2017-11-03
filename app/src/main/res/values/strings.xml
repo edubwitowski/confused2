@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">My_Meal_Tipper</string>
+        <string name="btn_charge">Press_Button_to_Calculate_Charges</string>
+        <string name="descritption">Describing_The_Meter_Charge</string>
+        <string name="prompt">Select_Lot</string>
+        <string name="txt_hours">Cost_of_Meal</string>
+        <string name="txt_title">Total_Meal_Charges</string>
+         <string name="txtResults">Results</string>
+        <string-array name="txtGroup">
+            <item>Tip_10%</item>
+            <item>Tip_15%</item>
+            <item>Tip_20%</item>
+            <item>Tip_20%</item>
+        </string-array>
+</resources>
+
