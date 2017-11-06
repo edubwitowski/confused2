@@ -15,6 +15,8 @@ public class MainActivity extends AppCompatActivity {
     int numberOfHours;
     double totalCharges;
     String lotChoice;
+    //Spinner spinner;
+
 
          @Override
         protected void onCreate(Bundle savedInstanceState) {
