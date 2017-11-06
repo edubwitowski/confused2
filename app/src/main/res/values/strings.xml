@@ -12,5 +12,11 @@
             <item>Tip_20%</item>
             <item>Tip_20%</item>
         </string-array>
+    <string-array name="txtService">
+        <item>Not Good Service</item>
+        <item>Adequate Service</item>
+        <item>Good Service</item>
+        <item>Excellent Service</item>
+    </string-array>
 </resources>
 

@@ -12,26 +12,28 @@ import java.text.DecimalFormat;
 public class MainActivity extends AppCompatActivity {
 
     double costPerHour= 1.50;
-    int numberOfHours;
+    int costOfMeal;
     double totalCharges;
-    String lotChoice;
+    String tip;
+    //Spinner spinner;
+
 
          @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_main);
-            final EditText hours =(EditText)findViewById(R.id.txtHours);
+            final EditText dollars =(EditText)findViewById(R.id.txtHours);
             final Spinner group =(Spinner)findViewById(R.id.txtGroup);
             Button charges = (Button)findViewById(R.id.btnCharge);
             charges.setOnClickListener(new View.OnClickListener(){
                 final TextView result = ((TextView)findViewById(R.id.txtResults));
                 @Override
                 public void onClick(View view){
-                    numberOfHours = Integer.parseInt(hours.getText().toString());
+                    costOfMeal = Integer.parseInt(dollars).getText().toString());
                     DecimalFormat currency = new DecimalFormat("$###,###.##");
-                    totalCharges = costPerHour * numberOfHours;
-                    lotChoice = group.getSelectedItem().toString();
-                    result.setText(" Total for Charges Plus Tip Equal " + lotChoice + " for " + numberOfHours
+                    totalCharges = tipChoice * costOfMeal;
+                    tip = group.getSelectedItem().toString();
+                    result.setText(" Total for Charges Plus Tip Equal " + tip + " for " + costOfMeal
                             + " hours is " + currency.format(totalCharges));
 
                 }

@@ -41,15 +41,20 @@
         android:layout_width="344dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:background="@android:color/holo_blue_bright"
-        android:entries="@id/txtGroup"
+        android:background="@color/colorAccent"
+        android:entries="@array/txtGroup"
         android:minWidth="@android:dimen/thumbnail_height"
         android:popupBackground="@android:color/holo_green_dark"
+        android:prompt="@id/txtGroup"
         android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/food"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="8dp"
+        app:layout_constraintVertical_bias="0.402"
         tools:spinnerMode="dropdown" />
 
     <Button
@@ -60,18 +65,17 @@
         android:layout_marginRight="16dp"
         android:layout_marginTop="228dp"
         android:text="@string/btn_charge"
+        app:layout_constraintHorizontal_bias="0.526"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/txtResults"
-        android:layout_width="wrap_content"
+        android:layout_width="105dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
         android:layout_marginTop="295dp"
         android:textAppearance="@android:style/TextAppearance.Material.Small"
         android:textSize="30sp"
@@ -92,5 +96,24 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/meal_tipping" />
+
+    <Spinner
+        android:id="@+id/txtService"
+        android:layout_width="344dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorAccent"
+        android:entries="@array/txtService"
+        android:minWidth="@android:dimen/thumbnail_height"
+        android:popupBackground="@android:color/holo_green_dark"
+        app:layout_constraintBottom_toTopOf="@+id/btnCharge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtGroup"
+        app:layout_constraintVertical_bias="0.351" />
 
 </android.support.constraint.ConstraintLayout>
