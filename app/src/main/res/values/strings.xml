@@ -1,20 +1,24 @@
 <resources>
     <string name="app_name">My_Meal_Tipper</string>
-        <string name="btn_charge">Press_Button_to_Calculate_Charges</string>
-        <string name="descritption">Describing_The_Meter_Charge</string>
-        <string name="prompt">Select_Lot</string>
-        <string name="txt_hours">Cost_of_Meal</string>
-        <string name="txt_title">Total_Meal_Charges</string>
+        <string name="btn_charge">Press Button to CalculateC</string>
+        <string name="descritption">Describing what you are doing</string>
+         <string name="prompt">This the selection</string>
+        <string name="txt_hours">Cost of Meal</string>
+        <string name="txt_title">Total Meal Charges</string>
          <string name="txtResults">Results</string>
         <string-array name="txtGroup">
-            <item>Tip_10%</item>
-            <item>Tip_15%</item>
-            <item>Tip_20%</item>
-            <item>Tip_20%</item>
+            <item>10%</item>
+            <item>15%</item>
+            <item>20%</item>
+            <item>25%</item>
         </string-array>
     <string-array name="txtService">
         <item>Not Good Service</item>
+<<<<<<< HEAD
         <item>Adequate Service</item>
+=======
+        <item>Ok Service</item>
+>>>>>>> 4b70231dcd7c69ba4b6ce341624f8bedf2f561c0
         <item>Good Service</item>
         <item>Excellent Service</item>
     </string-array>
