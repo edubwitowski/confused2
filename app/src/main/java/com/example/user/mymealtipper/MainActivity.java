@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     double costPerHour= 1.50;
     int costOfMeal;
     double totalCharges;
+    double tipChoice;
     String tip;
     //Spinner spinner;
 
@@ -29,12 +30,17 @@ public class MainActivity extends AppCompatActivity {
                 final TextView result = ((TextView)findViewById(R.id.txtResults));
                 @Override
                 public void onClick(View view){
-                    costOfMeal = Integer.parseInt(dollars).getText().toString());
+                    costOfMeal = Integer.parseInt(dollars.getText().toString());
                     DecimalFormat currency = new DecimalFormat("$###,###.##");
-                    totalCharges = tipChoice * costOfMeal;
+                    totalCharges = (tipChoice * costOfMeal) + costOfMeal;
                     tip = group.getSelectedItem().toString();
                     result.setText(" Total for Charges Plus Tip Equal " + tip + " for " + costOfMeal
                             + " hours is " + currency.format(totalCharges));
+                    if (tip == 10%){
+                        tipChoice = 0.1);
+                    } if (tip == 15%){
+                        tipChoice = 0.15)
+                    }
 
                 }
             });
